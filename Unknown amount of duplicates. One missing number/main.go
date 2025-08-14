@@ -20,7 +20,7 @@ func FindDupsMiss(input []int) (missed int, output []int) {
 		case current == next:
 			if lastAppended != current {
 				output = append(output, current)
-				lastAppended = current
+				lastAdded = current
 			}
 		}
 	}
